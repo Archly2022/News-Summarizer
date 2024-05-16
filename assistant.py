@@ -2,7 +2,7 @@ import openai
 from dotenv import find_dotenv, load_dotenv
 import time
 import logging
-from assistant import get_news
+from sorter import get_news
 import json
 
 class OpenAssist:
