@@ -27,3 +27,8 @@ Instructions:
 - The application will display the retrieved news articles along with their summaries.
 - It will also provide additional insights or instructions based on the summarized content.
 """
+
+# App Version
+- app version 1 API intergration
+- app version 2 OPEN AI API intergration
+- app version 3 HUGCHAT API intergration
