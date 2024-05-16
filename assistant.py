@@ -1,9 +1,9 @@
 import openai
 from dotenv import find_dotenv, load_dotenv
 import time
-from datetime import datetime
 import logging
-
+from assistant import get_news
+import json
 
 class OpenAssist:
     def __init__(self, assistant_id=None, thread_id=None):
@@ -41,6 +41,23 @@ class OpenAssist:
         )
         return run
     
+    def call_required_functions(self, required_actions):
+        if not self.run:
+            return 
+        tool_output =  []
+        for action in required_actions:
+            function_name = action["function"]["name"]
+            arguments = json.loads(action["function"]["arguments"])
+            
+            if function_name == "get_news":
+                output = get_news(topic=arguments["topic"])
+                print(f"STUFF:... {output}")
+                final_str = ""
+                for item in output:
+                    final_str += "".join(item)
+                    
+                tool_output.append({"tool_call_id": action["id"], "output": final_str})
+
     def wait_for_run_completion(self, run_id, sleep_interval=2):
         while True:
             try:
@@ -65,5 +82,3 @@ class OpenAssist:
     def get_summary(self):
         return self.summary  
     
-
-            
