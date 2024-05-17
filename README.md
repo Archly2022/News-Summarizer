@@ -1,6 +1,11 @@
 
   # News Summarizer App
 
+  
+https://github.com/Archly2022/News-Summarizer/assets/97497497/8a97cb80-db34-4832-8c6d-649561696cd8
+
+
+
   Note: Please install the necessary libraries to boot this app. You can visit the free website on <a href="https://globalnewz.streamlit.app">globalnewz</a>
 to preview and run the project on your device:
 
@@ -31,4 +36,4 @@ Instructions:
 # App Version
 - app version 1 API intergration
 - app version 2 OPEN AI API intergration
-- app version 3 HUGCHAT API intergration
+- app version 3 HUGCHAT API integration
