@@ -14,7 +14,7 @@ to preview and run the project on your device:
   3) To run the app's 1st version vist <a href="https://platform.openai.com">link</a> with your account and create an API key to run the program and store it on your `.env` file.
   4) Run `streamlit run streamlit.py` to view the project in the browser
   
-""""
+
 # News Summarizer App:
 
 This Streamlit application allows users to summarize news articles based on a keyword/topic.
@@ -31,7 +31,7 @@ Instructions:
 - Click on the "Summarize" button to initiate the summarization process.
 - The application will display the retrieved news articles along with their summaries.
 - It will also provide additional insights or instructions based on the summarized content.
-"""
+
 
 # App Version
 - app version 1 API intergration
